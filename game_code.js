@@ -1,7 +1,14 @@
 const words = ["bonjour", "ordinateur", "javascript", "html", "projet"];
+const words_index= ["words/beers.csv","words/fruits.csv","fortnite.csv"];
+
+const game_word; // à faire
+
 const displayArea = document.getElementById('display-area');
 const inputArea = document.getElementById('input-area');
 const point = document.getElementById('points')
+
+
+
 function addWord() {
     const word = words[Math.floor(Math.random() * words.length)];
     const wordElement = document.createElement('div');
@@ -22,7 +29,6 @@ function checkWord() {
         }
     }
 }
-
 
 function game_points_count(){
 const points = parseInt(point.textContent);
