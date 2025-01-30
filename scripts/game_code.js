@@ -62,6 +62,8 @@ wordchoise.addEventListener('change',wordListConstructor);
 //         .catch(error => console.error('Error fetching the CSV file:', error));
 // })
 
+const difficulty = document.getElementById("difficulty");
+
 inputArea.addEventListener('input', checkWord);
 let jeu;
 const GameStart = document.getElementById("GameStart");
@@ -69,7 +71,7 @@ let GSCliquer = 0
 GameStart.addEventListener('click',()=>{
     if(GSCliquer === 0){
         wordListConstructor();
-        jeu = setInterval(addWord, 200);
+        jeu = setInterval(addWord, parseInt(difficulty.value) * 100);
         console.log(jeu);
 
         GameStart.textContent = "Stop";
