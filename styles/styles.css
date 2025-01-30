@@ -1,4 +1,6 @@
 body {
+    background-image: url("../IMG_5151.jpg");
+    background-size: 1000px;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -21,3 +23,4 @@ body {
     border-radius: 10px;
     width: 80%;
 }
+
