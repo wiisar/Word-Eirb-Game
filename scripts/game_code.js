@@ -5,6 +5,8 @@ const displayArea = document.getElementById('display-area');
 const inputArea = document.getElementById('input-area');
 const point = document.getElementById('points')
 
+const def_audio = document.getElementById("audio_def");
+
 let nb_mot=0;
 let mot_limit = 10;
 
@@ -42,6 +44,11 @@ point.textContent = points+1;
 
 function gameover(jeu){
     clearInterval(jeu);
+
+
+    def_audio.currentTime = 0;
+    def_audio.play();
+
     displayArea.style.color = "red"
     displayArea.style.textAlign = "center"
     displayArea.style.alignContent = "center"
