@@ -1,8 +1,6 @@
 const words = ["bonjour", "ordinateur", "javascript", "html", "projet"];
 const words_index= ["words/beers.csv","words/fruits.csv","fortnite.csv"];
 
-const game_word; // à faire
-
 const displayArea = document.getElementById('display-area');
 const inputArea = document.getElementById('input-area');
 const point = document.getElementById('points')
@@ -36,4 +34,4 @@ point.textContent = points+1;
 }
 
 inputArea.addEventListener('input', checkWord);
-setInterval(addWord, 200);
+setInterval(addWord, 2000);
