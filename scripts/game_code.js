@@ -29,6 +29,12 @@ function addWord() {
     }
 }
 
+function cheatcode(){
+    const points = parseInt(point.textContent);
+    point.textContent= points +719;
+    
+}
+
 function checkWord() {
     const inputText = inputArea.value.trim();
     const wordElements = displayArea.getElementsByTagName('div');
@@ -89,22 +95,12 @@ function leaderboard(pseudo) {
         score: parseInt(point.textContent, 10) 
     };
 
-    // Récupérer le leaderboard existant ou initialiser un tableau vide
+
     let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
-
-    // Ajouter le nouveau joueur
     leaderboard.push(joueur);
-
-    // Trier par score décroissant
     leaderboard.sort((a, b) => b.score - a.score);
-
-    // Garder uniquement les 10 meilleurs scores (optionnel)
     leaderboard = leaderboard.slice(0, 10);
-
-    // Sauvegarder dans le localStorage
     localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
-
-    // Afficher le leaderboard
     afficherLeaderboard();
 }
 /*
