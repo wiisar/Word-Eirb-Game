@@ -10,6 +10,7 @@ const inputArea = document.getElementById('input-area');
 const point = document.getElementById('points')
 
 const def_audio = document.getElementById("audio_def");
+let jeu;
 
 let nb_mot=0;
 let mot_limit = 10;
@@ -24,7 +25,7 @@ function addWord() {
     nb_mot++;
 
     if (nb_mot >= mot_limit){
-        gameover(jeu)
+        gameover(jeu);
     }
 }
 
@@ -163,13 +164,13 @@ wordchoise.addEventListener('change',wordListConstructor);
 //         .catch(error => console.error('Error fetching the CSV file:', error));
 // })
 
-const difficulty = document.getElementById("difficulty");
 
 inputArea.addEventListener('input', checkWord);
 afficherLeaderboard();
-jeu=setInterval(addWord, 2000);
 
-let jeu;
+const difficulty = document.getElementById("difficulty");
+
+
 const GameStart = document.getElementById("GameStart");
 let GSCliquer = 0
 GameStart.addEventListener('click',()=>{
