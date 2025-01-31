@@ -55,6 +55,16 @@ const points = parseInt(point.textContent);
 point.textContent = points+1;
 }
 
+/*
+============================
+    FONCTION GAMEOVER
+----------------------------
+
+Lancement d'un audio de defaite.
+Message annonçant la défaite du joueur ainsi que son score
+Lancement de la fonction leaderboard pour enregistrement de score
+*/
+
 function gameover(jeu){
     clearInterval(jeu);
 
@@ -73,6 +83,7 @@ function gameover(jeu){
     }
 
 }
+
 /*
 ============================
     FONCTION LEADERBOARD
