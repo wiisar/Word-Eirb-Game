@@ -38,8 +38,6 @@ function wordListConstructor (){
     actualWordlist = [...words_index[parseInt(wordchoise.value)]]; // récupére la liste saisie par l'utilisateur et remplace toutes les valeurs de actualWordlist
     //console.log(words_index[wordchoise.value])
     //console.log(actualWordlist);
-
-
 }
 
 function game_points_count(){
