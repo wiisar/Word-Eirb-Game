@@ -9,7 +9,7 @@ body {
 
     background-color: #e5e5f7;
     opacity: 0.8;
-    background-image:  linear-gradient(30deg, #171717 12%, transparent 12.5%, transparent 87%, #171717 87.5%, #171717), linear-gradient(150deg, #171717 12%, transparent 12.5%, transparent 87%, #171717 87.5%, #171717), linear-gradient(30deg, #171717 12%, transparent 12.5%, transparent 87%, #171717 87.5%, #171717), linear-gradient(150deg, #171717 12%, transparent 12.5%, transparent 87%, #171717 87.5%, #171717), linear-gradient(60deg, #17171777 25%, transparent 25.5%, transparent 75%, #17171777 75%, #17171777), linear-gradient(60deg, #17171777 25%, transparent 25.5%, transparent 75%, #17171777 75%, #17171777);
+    background-color: rgba(255, 166, 0, 0.705);
     background-size: 44px 77px;
     background-position: 0 0, 0 0, 22px 39px, 22px 39px, 0 0, 22px 39px;
     
