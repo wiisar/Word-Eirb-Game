@@ -9,9 +9,11 @@
 </head>
 
 <body>
-    <div id="ladderboard"> Ladder</div>
+    <div id="game">
+    <div id="game-name"><p> Taper des mots</p> </div>
 
     <p id="points">0</p>
+    <div id="game-selector">
     <select id="word-list">
         <option value="0">Beers</option>
         <option value="1">fruits</option>
@@ -22,13 +24,17 @@
         <option value="10">Normal</option>
         <option value="5">Difficile</option>
     </select>
-
+    </div>
     
-    <button id="GameStart">Start</button>
+
     <div id="display-area"></div>
     <input type="text" id="input-area" placeholder="Tapez un mot ici...">
-    <button id="reset">Remise à zéro du leaderboard</button>
+    <div id="game-button">
+        <button id="GameStart">Start</button>
+        <button id="reset">Remise à zéro du leaderboard</button>
+    </div>
     <div id="leaderboard"></div>
+</div>
     <audio id="audio_def" src="./media/Bruitage_defaite.mp3"></audio>
 </body>
 </html>

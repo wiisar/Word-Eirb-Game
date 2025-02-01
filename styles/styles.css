@@ -1,3 +1,10 @@
+/* *{
+    border: 1px solid black ;
+} */
+html { 
+    overflow-y: hidden; 
+} 
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,21 +13,54 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-
-    background-color: #e5e5f7;
     opacity: 0.8;
     background-color: rgba(255, 166, 0, 0.705);
     background-size: 44px 77px;
     background-position: 0 0, 0 0, 22px 39px, 22px 39px, 0 0, 22px 39px;
-    
 }
 
-#display-area{
+div#game {
+    border: 5px solid orangered;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div#game-name {
+    /* background-color:rgba(255, 166, 0, 0.900); */
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    text-align: center;
+}
+
+div#game-name p {
+    font-size: 50px;
+    text-shadow: #FFFEC8 0 -1px 0,
+                 #ff3a00 1px 1px 0,
+                 #c01c01 2px 2px 0,
+                 #bf1b01 3px 3px 0,
+                 #e90b20 4px 4px 0,
+                 #850103 5px 5px 0,
+                 #333 5px 5px 10px;
+    color: #FFD100;
+}
+
+div#game-selector {
+    display: flex;
+}
+
+div#game #display-area {
     display: flex;
     flex-direction: column;
     justify-content: center;  
     align-items: center;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding: 20px;
     width: 80%;
     height: 200px;
@@ -29,15 +69,21 @@ body {
     margin-bottom: 20px;
     background-color: lightgrey;
 }
-#input-area { 
+
+div#game #input-area { 
     text-align: center;
-    padding-left: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
-    width: 80%;
+    font-size: 25px;
     background-color: lightgrey;
 }
-#points , #leaderboard{
+
+#points, #leaderboard {
     display: flex;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -47,9 +93,24 @@ body {
     font-size: 24px;
 }
 
-button{
-    display: inline;
-    background-color: 
-    
+button, select   {
+    background: #fbca1f;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
 }
 
+button:hover, select:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+
+button:active ,select:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}
