@@ -77,7 +77,10 @@ function gameover(jeu){
     if (pseudo) {
         leaderboard(pseudo);
     }
-
+    GameStart.textContent = "Restart";
+    GSCliquer = 0;
+    nb_mot = 0;
+    
 }
 /*
 ============================
@@ -174,9 +177,10 @@ GameStart.addEventListener('click',()=>{
         wordListConstructor();
         jeu = setInterval(addWord, parseInt(difficulty.value) * 100);
         console.log(jeu);
-
         GameStart.textContent = "Stop";
         GSCliquer = 1;
+        displayArea.style.color = "black"
+        displayArea.innerHTML = '';
     }
     else{
         clearInterval(jeu);
