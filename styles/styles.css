@@ -51,6 +51,9 @@ div#game-name p {
     color: #FFD100;
 }
 
+div#game p#points {
+    width: 100px;
+}
 div#game-selector {
     display: flex;
 }
@@ -83,7 +86,6 @@ div#game #input-area {
     display: flex;
     margin-bottom: 5px;
     margin-top: 5px;
-
     justify-content: center;
     flex-direction: column;
     align-items: center;
