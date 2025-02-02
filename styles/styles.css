@@ -19,6 +19,10 @@ body {
     background-position: 0 0, 0 0, 22px 39px, 22px 39px, 0 0, 22px 39px;
 }
 
+div#point-sentence{
+    display: inline-flex;
+}
+
 div#game {
     border: 5px solid orangered;
     width: 50%;
@@ -52,7 +56,8 @@ div#game-name p {
 }
 
 div#game p#points {
-    width: 100px;
+    position: relative;
+    width: 150px;
 }
 div#game-selector {
     display: flex;
