@@ -15,6 +15,8 @@ let jeu;
 let nb_mot=0;
 let mot_limit = 10;
 
+let game_loose = 0;
+
 function addWord() {
     const word = actualWordlist[Math.floor(Math.random() * actualWordlist.length)];
     console.log(word);
@@ -79,7 +81,7 @@ function gameover(jeu){
     }
     GameStart.textContent = "Restart";
     GSCliquer = 0;
-    nb_mot = 0;
+    game_loose = 1;
     
 }
 /*
@@ -179,8 +181,14 @@ GameStart.addEventListener('click',()=>{
         console.log(jeu);
         GameStart.textContent = "Stop";
         GSCliquer = 1;
-        displayArea.style.color = "black"
-        displayArea.innerHTML = '';
+        if(game_loose === 1){
+            console.log(game_loose);
+            displayArea.style.color = "black"
+            displayArea.innerHTML = '';
+            game_loose = 0;
+            nb_mot=0;
+        }
+        
     }
     else{
         clearInterval(jeu);
