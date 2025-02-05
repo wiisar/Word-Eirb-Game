@@ -3,48 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dactylograve vite</title>
-    <link rel="icon" type="image/png" href="./media/logo_onglet.png">
+    <title>Jeu de Taper des Mots</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="./scripts/game_code.js" defer></script>
 </head>
 
 <body>
-    <div id="select">
-        <select id="word-phrase">
-            <option value="0">Mots</option>
-            <option value="1">Phrases</option>
-        </select>
-        <select id="word-list">
-            <option value="0">Bieres</option>
-            <option value="1">Fruits</option>
-            <option value="2">Fortnite</option>
-        </select>
-        <select id="difficulty">
-            <option value="20">Facile</option>
-            <option value="10">Normal</option>
-            <option value="5">Difficile</option>
-        </select>
-    </div>
-    <div id="boutton start">
-        <br>
-        <button id="GameStart">Start</button>
-    </div>
-    <div id="affichage score">
-        <p id="scorep">Score :</p>
-        <p id="points">0</p>
-    </div>
+    <div id="container">
+        <div id="game">
+            <div id="game-name">
+                <p>Taper des mots</p>
+            </div>
+            <div id="point-sentence">
+                <p id="score">Score : </p>
+                <p id="points">0</p>
+            </div>
+            <div id="game-selector">
+                <select id="word-list">
+                    <option value="0">Beers</option>
+                    <option value="1">fruits</option>
+                    <option value="2">fortnite</option>
+                </select>
+                <select id="difficulty">
+                    <option value="20">Facile</option>
+                    <option value="10">Normal</option>
+                    <option value="5">Difficile</option>
+                </select>
+            </div>
 
-    <div id="display-area"></div>
-    <div id="input-texte">
-        <input type="text" id="input-area" placeholder="Tapez un mot ici...">
+            <div id="display-area"></div>
+            <input type="text" id="input-area" placeholder="Tapez un mot ici...">
+            <div id="game-button">
+                <button id="GameStart">Start</button>
+                <button id="reset">Remise à zéro du leaderboard</button>
+            </div>
+        </div>
+        <div id="leaderboard">
+           
+        </div>
     </div>
-    <div id="raz-sec"><br>
-    <button id="reset">Remise à zéro du leaderboard</button>
-    <br><br>
-    </div>
-    <div id="leaderboard"></div>
-        
     <audio id="audio_def" src="./media/Bruitage_defaite.mp3"></audio>
 </body>
 </html>
