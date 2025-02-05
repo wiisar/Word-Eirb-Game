@@ -24,7 +24,7 @@ let game_loose = 0;
 
 function addWord() {
     const word = actualWordlist[Math.floor(Math.random() * actualWordlist.length)];
-    console.log(word);
+    // console.log(word);
     const wordElement = document.createElement('div');
     wordElement.textContent = word;
     displayArea.appendChild(wordElement);
@@ -59,7 +59,7 @@ let actualWordlist = [];
 
 function wordListConstructor() {
     actualWordlist = [...words_index[parseInt(typechoise.value)][parseInt(wordchoise.value)]];
-    console.log(actualWordlist);  // Pour vérifier si la liste est correcte
+    // console.log(actualWordlist);  
 }
 
 function game_points_count(){
@@ -172,17 +172,6 @@ wordchoise.addEventListener('change',wordListConstructor);
 typechoise.addEventListener('change',wordListConstructor);
 
 
-// () => {
-//     fetch(words_index[parseInt(wordlist.value)])
-//         .then(response => response.text())
-//         .then(data => {
-//             const csvWords = data.split('\n').map(word => word.trim()).filter(word => word.length > 0);
-//             words.length = 0; // Clear the existing words array
-//             words.push(...csvWords);
-//         })
-//         .catch(error => console.error('Error fetching the CSV file:', error));
-// })
-
 
 inputArea.addEventListener('input', checkWord);
 afficherLeaderboard();
@@ -205,6 +194,8 @@ GameStart.addEventListener('click',()=>{
             displayArea.innerHTML = '';
             game_loose = 0;
             nb_mot=0;
+            point.textContent=0;
+
         }
         
     }
