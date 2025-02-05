@@ -144,6 +144,7 @@ button {
     background-color: lightgray;
     color: BLACK;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 
