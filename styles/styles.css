@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 105vh;
     margin: 0;
     opacity: 0.8;
     background-color: rgba(255, 166, 0, 0.705);
@@ -99,6 +99,67 @@ div#game #input-area {
     background-color: lightgrey;
     font-size: 24px;
 }
+select {
+    width: 200px;
+    padding: 10px;
+    font-size: 12px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: lightgray;
+    color: black;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+select option {
+    text-align: center;
+}
+
+select:hover {
+    border-color: #3498db;
+    background-color: gray;
+}
+
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: lightgray;
+    
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    background-color: lightgray;
+    color: BLACK;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+button:hover {
+    background-color: gainsboro;
+    transform: translateY(-2px);
+}
+
+/* Effet lors du clic sur le bouton */
+button:active {
+    background-color: black;
+    transform: translateY(2px);
+}
+
+/* Bouton désactivé */
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+
+
+
 
 button, select   {
     background: #fbca1f;
