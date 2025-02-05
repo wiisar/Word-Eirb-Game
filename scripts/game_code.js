@@ -7,7 +7,7 @@ const phrasebiere = ["Dégustation de bière locale", "Bière artisanale houblon
 words_index = [[beers, fruits], [phrasebiere, phrasefruit]];
 const wordchoise = document.getElementById("word-list");
 
-const typechoise = document.getElementById("word-phrase");
+const typechoise = document.getElementById("word-choice");
 
 const displayArea = document.getElementById('display-area');
 const inputArea = document.getElementById('input-area');
