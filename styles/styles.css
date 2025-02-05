@@ -1,9 +1,9 @@
 /* *{
     border: 1px solid black ;
 } */
-html { 
+/* html { 
     overflow-y: hidden; 
-} 
+}  */
 
 body {
     font-family: Arial, sans-serif;
@@ -19,9 +19,6 @@ body {
     background-position: 0 0, 0 0, 22px 39px, 22px 39px, 0 0, 22px 39px;
 }
 
-div#point-sentence{
-    display: inline-flex;
-}
 
 div#game {
     border: 5px solid orangered;
@@ -30,6 +27,9 @@ div#game {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+div#point-sentence{
+    display: inline-flex;
 }
 
 div#game-name {
@@ -56,7 +56,7 @@ div#game-name p {
 }
 
 div#game p#points {
-    position: relative;
+    /* position: relative; */
     width: 150px;
 }
 div#game-selector {
@@ -73,7 +73,7 @@ div#game #display-area {
     width: 80%;
     height: 200px;
     border-radius: 10px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     margin-bottom: 20px;
     background-color: lightgrey;
 }
